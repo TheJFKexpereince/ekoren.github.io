@@ -7,10 +7,14 @@
 import simplegui
 import random
  
-message = "Welcome to Revenge of the Ninja"
-message1 = "Years ago the Ketsueki Bushi killed my"
-message2 = "family, my clan, my love."
-message3 = "Now I seek my revenge."
+
+message1 = "... how could any this have happened..."
+message2 = "My Clan has disowned me,"
+message3 = "My Wife has left me,."
+message4 = "My Brothers are dead."
+message5 = "... I understand what I must do"
+Message6 = "Welcome to Revenge of the ninja"
+
 yeet = "Die you dog"
 welcome = True
 melee = False
@@ -235,6 +239,9 @@ def draw(canvas):
         canvas.draw_text(message1, [10,112], 24, "Blue")
         canvas.draw_text(message2, [80,135], 24, "Blue")
         canvas.draw_text(message3, [80,155], 24, "Blue")
+        canvas.draw_text(message4, [80,155], 24, "Blue")
+        canvas.draw_text(message5, [80,155], 24, "Blue")
+        canvas.draw_text(message6, [80,155], 24, "Blue")
         intro_timer -= 1               
         if intro_timer == 0:
             intro = False
